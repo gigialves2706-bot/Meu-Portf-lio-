@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="description" content="Portfólio de Giovanna Cristina, estudante interessada em tecnologia.">
+  <title>Giovanna Cristina — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--paper:#f5f4ed;--ink:#20231f;--muted:#686d64;--green:#b8d95d;--orange:#ff704d;--blue:#3459d1;--line:rgba(32,35,31,.2);--mono:"DM Mono","Courier New",monospace;--sans:"Manrope","Trebuchet MS",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background-color:var(--paper);background-image:radial-gradient(rgba(32,35,31,.12) .65px,transparent .65px);background-size:8px 8px;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit}.page{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+    .topbar{display:flex;align-items:center;justify-content:space-between;min-height:74px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;text-transform:uppercase}.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.brand-mark{width:12px;height:12px;background:var(--orange);border-radius:50%}.nav{display:flex;gap:30px}.nav a{text-decoration:none;color:var(--muted);transition:color .2s}.nav a:hover,.nav a:focus-visible{color:var(--ink)}
+    .hero{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(280px,.88fr);align-items:center;gap:clamp(36px,8vw,110px);min-height:600px;padding-block:72px 88px}.eyebrow,.section-kicker,.course-number{font-family:var(--mono);font-size:12px;text-transform:uppercase}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--muted)}.eyebrow:before{content:"";width:26px;height:2px;background:var(--blue)}h1{max-width:650px;margin:24px 0 20px;font-size:clamp(54px,8.2vw,102px);line-height:.98;font-weight:800}h1 span{color:var(--blue)}.intro{max-width:520px;margin:0;color:#4c514a;font-size:17px;line-height:1.8}.hero-bottom{display:flex;align-items:center;gap:18px;margin-top:34px}.cta{display:inline-flex;align-items:center;gap:12px;padding:14px 18px;background:var(--green);border:1px solid var(--ink);font-family:var(--mono);font-size:12px;text-decoration:none;text-transform:uppercase;transition:transform .2s,box-shadow .2s}.cta:hover{transform:translate(-3px,-3px);box-shadow:4px 4px 0 var(--ink)}.cta span{font-size:18px;line-height:10px}.hero-note{color:var(--muted);font-family:var(--mono);font-size:11px}.portrait-wrap{position:relative;width:min(100%,370px);justify-self:center}.portrait-wrap:before{position:absolute;z-index:-1;content:"";inset:19px -19px -19px 19px;background:var(--orange);border:1px solid var(--ink)}.portrait{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--ink);background:#d9ded3}.photo-label{position:absolute;right:-24px;bottom:30px;padding:11px 14px;background:var(--green);border:1px solid var(--ink);font-family:var(--mono);font-size:11px;text-transform:uppercase;transform:rotate(-4deg)}
+    .about{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;padding-block:76px 88px;border-top:1px solid var(--line)}.section-kicker{color:var(--blue)}h2{margin:12px 0 0;font-size:clamp(30px,4vw,44px);line-height:1.12}.about-copy{max-width:630px}.about-copy p{margin:0 0 18px;color:#4c514a;font-size:16px;line-height:1.85}.school-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}.school{padding:9px 12px;border:1px solid var(--line);font-family:var(--mono);font-size:11px}
+    .courses{padding-block:68px 84px;background:var(--ink);color:var(--paper)}.courses-inner{width:min(1120px,calc(100% - 48px));margin-inline:auto}.courses-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}.courses .section-kicker{color:var(--green)}.course-total{color:#c9cbc2;font-family:var(--mono);font-size:12px;white-space:nowrap}.course-list{border-top:1px solid rgba(245,244,237,.3)}.course{display:grid;grid-template-columns:54px 1fr auto;gap:22px;align-items:center;min-height:82px;border-bottom:1px solid rgba(245,244,237,.3)}.course-number{color:var(--green)}.course h3{margin:0;font-size:17px;font-weight:600}.hours{color:#d0d2c9;font-family:var(--mono);font-size:12px;white-space:nowrap}.footer{display:flex;justify-content:space-between;gap:18px;padding-block:22px;color:var(--muted);font-family:var(--mono);font-size:11px;text-transform:uppercase}.footer p{margin:0}
+    @media(max-width:720px){.page{width:min(100% - 36px,560px)}.topbar{min-height:64px}.nav{gap:16px;font-size:10px}.hero{grid-template-columns:1fr;gap:54px;min-height:0;padding-block:62px 75px}h1{max-width:500px;font-size:clamp(55px,15vw,82px)}.intro{font-size:15px}.portrait-wrap{width:min(78%,330px);margin-right:15px}.about{grid-template-columns:1fr;gap:26px;padding-block:60px 68px}.courses{padding-block:58px 66px}.courses-inner{width:min(100% - 36px,560px)}.courses-head{align-items:start;flex-direction:column;gap:14px}.course{grid-template-columns:30px 1fr auto;gap:12px;min-height:78px}.course h3{font-size:14px;line-height:1.45}.hours{font-size:10px}}
+    @media(max-width:390px){.nav{gap:10px}.brand{gap:7px;font-size:10px}.course{grid-template-columns:25px 1fr;gap:10px;padding-block:13px}.hours{grid-column:2}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header class="page topbar">
+    <a class="brand" href="#inicio" aria-label="Giovanna Cristina, início"><span class="brand-mark" aria-hidden="true"></span><span>Giovanna Cristina</span></a>
+    <nav class="nav" aria-label="Navegação principal"><a href="#sobre">Sobre mim</a><a href="#cursos">Cursos</a></nav>
+  </header>
+  <main>
+    <section class="page hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">Estudante · Tecnologia</p><h1 id="hero-title">Oi, eu sou<br><span>Giovanna.</span></h1><p class="intro">Tenho 15 anos, estou no 1º ano do ensino médio e quero descobrir cada vez mais sobre o universo da tecnologia.</p><div class="hero-bottom"><a class="cta" href="#sobre">Conheça minha história <span aria-hidden="true">↘</span></a><span class="hero-note">Meu portfólio pessoal</span></div></div>
+      <div class="portrait-wrap"><img class="portrait" src="IMG/minha%20foto.jpg" alt="Foto de Giovanna Cristina"><span class="photo-label">Prazer, Giovanna!</span></div>
+    </section>
+    <section class="page about" id="sobre" aria-labelledby="about-title">
+      <div><p class="section-kicker">01 / Sobre mim</p><h2 id="about-title">Um pouco<br>de quem sou.</h2></div>
+      <div class="about-copy"><p>Meu nome é Giovanna Cristina. Tenho 15 anos e estou no 1º ano do ensino médio. Estudo na Afesu Morro Velho e na Escola Domingos Mignoni.</p><p>Tenho muito interesse em trabalhar com algo ligado à tecnologia no futuro. Fora dos estudos, gosto de maratonar séries, sair com meus amigos, ir à praia e a parques aquáticos, e estar com a minha família.</p><div class="school-list" aria-label="Escolas"><span class="school">Afesu Morro Velho</span><span class="school">Escola Domingos Mignoni</span></div></div>
+    </section>
+    <section class="courses" id="cursos" aria-labelledby="courses-title">
+      <div class="courses-inner"><div class="courses-head"><div><p class="section-kicker">02 / Aprendizado</p><h2 id="courses-title">Cursos e formação.</h2></div><span class="course-total">5 cursos concluídos</span></div>
+        <div class="course-list">
+          <article class="course"><span class="course-number">01</span><h3>Operador de microcomputador</h3><span class="hours">160 horas</span></article>
+          <article class="course"><span class="course-number">02</span><h3>Power BI</h3><span class="hours">32 horas</span></article>
+          <article class="course"><span class="course-number">03</span><h3>Implantação de Redes Locais</h3><span class="hours">48 horas</span></article>
+          <article class="course"><span class="course-number">04</span><h3>Excel Básico com IA generativa</h3><span class="hours">20 horas</span></article>
+          <article class="course"><span class="course-number">05</span><h3>Programação com IA generativa</h3><span class="hours">40 horas</span></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page footer"><p>Giovanna Cristina</p><p>Portfólio pessoal · 2026</p></footer>
+</body>
+</html>
